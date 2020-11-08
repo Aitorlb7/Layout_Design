@@ -48,7 +48,15 @@ flutter:
   assets:
     - assets/Dog.png
     - assets/Ciri.jpg
+    - assets/dog_image.png
+    - assets/cat_image.png
+    - assets/rabbit_image.png
 
+    - assets/icons/home_icon.png
+    - assets/icons/selected_home_icon.png
+    - assets/icons/person_icon.png
+    - assets/icons/internet_icon.png
+    - assets/icons/chat_icon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
