@@ -12,31 +12,47 @@ class AnimalInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 40,
-      height: 70,
+      width: 80,
+      height: 150,
       decoration: BoxDecoration(
-        color: Colors.grey[300],
+        color: Colors.grey[200],
         borderRadius: BorderRadius.all(
-          Radius.circular(50),
+          Radius.circular(40),
         ),
       ),
-      padding: EdgeInsets.all(8),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset('$image'),
-          Text(
-            '$value',
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.only(top: 3),
+            child: Image.asset(
+              '$image',
+              scale: 1.3,
             ),
           ),
-          Text(
-            '$name',
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: Text(
+              '$value',
+              style: TextStyle(
+                fontSize: 20,
+                fontFamily: 'Roboto',
+                color: Colors.black,
+                fontWeight: FontWeight.w800,
+                decoration: TextDecoration.none,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              '$name',
+              style: TextStyle(
+                fontSize: 14,
+                fontFamily: 'Roboto',
+                color: Colors.black,
+                fontWeight: FontWeight.w600,
+                decoration: TextDecoration.none,
+              ),
             ),
           ),
         ],

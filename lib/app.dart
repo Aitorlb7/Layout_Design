@@ -6,6 +6,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Roboto'),
       home: MainScreen(),
     );
   }
